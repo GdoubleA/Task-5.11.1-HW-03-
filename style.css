@@ -19,6 +19,10 @@ h1 {
     background-color: rgba(0, 0, 0, 0.386);  
     font-size: 4rem;
     font-family: 'Times New Roman', Times, serif;
+    width: 290px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-style: ridge;
 }
 
 footer {
@@ -44,4 +48,55 @@ footer .links > a {
 .copyright {
     color: rgb(108, 117, 125);
     font-family: 'Times New Roman', Times, serif;
+}
+
+.news {
+    background-color: #fff;
+    padding: 50px 0 32px;
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+article a {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #0085a1;
+}
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: rgb(134, 142, 150);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* псевдокласс четные новости */
+section:nth-of-type(2n) {
+    background-color: rgba(85, 85, 164, 0.419);
+}
+
+/* псевдоэлемент NEW */
+.new::before {
+    content: "NEW ";
+    color: red;
+    /* text-decoration:underline;  */
+    vertical-align: super;
+    font-size:medium;
 }
