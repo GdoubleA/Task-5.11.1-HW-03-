@@ -90,7 +90,8 @@ article img {
 
 /* псевдокласс четные новости */
 section:nth-of-type(2n) {
-    background-color: rgba(85, 85, 164, 0.419);
+    /* background-color: rgba(85, 85, 164, 0.419); */
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(71, 49, 120, 0.35) 25%, rgba(71, 49, 120, 0.35) 75%, #fff 100%);
 }
 
 /* псевдоэлемент NEW */
